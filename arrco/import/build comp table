@@ -1,0 +1,6 @@
+TRUNCATE TABLE Dbo.comp
+INSERT INTO dbo.Comp 
+SELECT C_Key, LTRIM(C_Ref)--, COUNT(*)
+FROM dbo.Comp1
+GROUP BY C_Key, LTRIM(C_Ref)
+--HAVING COUNT(*) > 1
