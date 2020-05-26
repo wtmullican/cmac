@@ -2,6 +2,9 @@
 --	PAR_Comp
 --	--------------------------------------------------------------------------
 
+
+UPDATE dbo.Parts SET PAR_Comp = NULL WHERE 1=1
+
 DECLARE 
 	@PAR_PartID		int,
 	@PAR_PN			varchar(120),
